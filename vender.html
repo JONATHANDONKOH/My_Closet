@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height:100vh;
+            width:100%;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav ul{
+            height:100px;
+            display: flex;
+            flex-direction: row;
+    
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li{
+            margin: 20px;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #cart{
+            font-size: 30px;
+        }
+        #shoppping{
+            font-size: 15px;
+            float: right;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #chromee{
+          width:200px;
+          height:250px;
+          margin-top: 20px;
+        }
+        #package{
+            position:absolute;
+            left:230px;
+            top: 320px;
+
+        }
+       
+        #wh{
+            font-weight: bolder;
+        }
+        #last{
+            height:40px;
+            width:50px;
+            background: rgb(243, 232, 232);
+            padding: 3px;
+        }
+        #mon{
+         position:absolute;
+            left:470px;
+            top: 320px;
+
+        }
+        #size{
+         position:absolute;
+            left:470px;
+            top: 360px;
+
+        }
+        #trend{
+            color: rgba(182, 169, 169, 0.856);
+        }
+        
+        #payment{
+            position:absolute;
+            left:850px;
+            top: 320px;
+            font-size: 25px;
+        }
+        #subtotal{
+            position: relative;
+            font-size: 15px;
+        }
+        #submon{
+            position: relative;
+            left:200px;
+            font-size: 15px;
+        }
+        #delivery{
+            font-size:15px ;
+        }
+        #deliverymon{
+            position: relative;
+            left:200px;
+            font-size: 15px;
+        }
+        hr{
+            position: relative;
+            bottom: 40px;
+            left:320px;
+            width:400px;
+        }
+        #total{
+            position:absolute;
+            left:850px;
+            top: 510px;
+            font-size: 25px;
+        }
+        #tomon{
+            position: relative;
+        left:200px;   
+        font-size: 15px; 
+        }
+        #payout{
+            position:absolute;
+            left:850px;
+            top: 550px;
+            height:40px;
+            width:200px;
+            background: black;
+            border-radius: 50px;
+            padding-left: 150px;
+            padding-top: 15px;
+            color: white;
+            font-size: 20px;
+        }
+      #end{
+        height:40vh;
+        width:100%;
+        background-color: antiquewhite;
+        position: relative;
+        color:black;
+      }
+      #methods{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#cho{
+    margin-left: 60px;
+    font-weight: bold;
+}
+#cardcre{
+    position: absolute;
+    bottom:210px;
+    height:30px;
+    width:30px;
+    right:1290px;
+}
+#debit{
+    position: absolute;
+    bottom:219px;
+    right:1270px;
+    height:18px;
+    width:25px;
+}
+#paypa{
+    position: absolute;
+    bottom:219px;
+    right:1244px;
+    height:18px;
+    width:25px;
+}
+#small{
+    margin-top: 15px;
+}
+#customer{
+    padding: 20px 30px;
+    font-size: 15px;
+    position: absolute;
+    bottom:1px;
+    left:600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cus{
+position: relative;
+bottom: 5px;
+font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>MY Closet</h1>
+        <nav>
+            <ul>
+                <li id="watch">Watches</li>
+                <li id="shoes">Shoes</li>
+                <li id="Bags">Bags</li>
+                <li id="Shirts">Shirts</li>
+                <li id="neck">necklaces</li>
+                <li id="sli">Slippers</li>
+                <li id="cup">Cups</li>
+                <li id="short">Shorts</li>
+                <li id="short">Jeans</li>
+            </ul>
+        </nav>
+         <div id="cart">
+            ADD TO YOUR WARDROBE
+            <span id="shoppping">Continue shopping</span>
+         </div>
+         <img id="chromee" src="./images/chromejeans-removebg-preview.png">
+         <div id="package">
+           <span id="trend">New trend</span><br>
+            <br>
+           <span id="wh"> A-COLD-WALL*</span><br><br>
+            Chrome Haert Jeans<br><br>
+         <span id="last"> Last 1 left</span>
+         </div>
+         <div id="mon">Ghc 300</div><br><br>
+         <div id="size">Size - &nbsp;32</div>
+         <div id="payment">
+            payment<br><br>
+            <span id="subtotal">Subtotal</span>
+            <span id="submon">Ghc300</span><br><br>
+            <span id="delivery">Delvery</span>
+            <span id="deliverymon">Ghc50</span>
+         </div>
+         <hr>
+         <div id="total">
+            <span id="too">Total</span>
+            <span id="tomon">Ghc350</span>
+         </div>
+         <div id="payout">
+            Pay out
+         </div>
+    </div>
+    <div id="end">
+        <div id="methods">            
+            <span id="cho">Payment Methods:</span><br>
+            <div id="small"> My Closet,we offer a variety of secure payment options to<br>
+             make your shopping experience convenient and hassle-free.<br>
+             You can choose to pay for your purchases  using major credit card<br>
+            debit cards, PayPal, and other popular online payment methods.<br>
+            We prioritize the security of your transactions and ensure<br>
+             that your payment information is always protected.
+            </div>
+            <div id="customer">
+               <span id="cus"> Customer Service Approach:</span>
+                 <div id="teext">At My Closet, we believe in treating our<br>
+                service team  customers with the utmost respect  and care. Our dedicated customer <br>
+                 is here to assist you with any questions, concerns,  or issues you may have<br>
+                . We strive to provide prompt and helpful responses to ensure  your satisfaction<br>
+                Whether you need assistance with placing   with every aspect of your shopping experience.<br>
+                  an order, tracking a shipment,  or resolving an issue with a product, and professional support.
+                  you can count on us to provide you with friendly Your satisfaction is our top priority,<br>
+                 and we are committed to making your experience with My Closet a positive and enjoyable one.
+                 </div>
+                 <img id="cardcre"  src="./images/credit_card-removebg-preview.png">
+                 <img id="debit"  src="./images/debit-removebg-preview.png">
+                 <img id="paypa"  src="./images/paypa-removebg-preview.png">
+    </div>
+</body>
+</html>

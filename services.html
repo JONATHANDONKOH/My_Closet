@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+    body{
+        background-color:white;
+background-position: center;
+background-size: cover;
+}
+#container{
+height:130vh;
+width:100%;
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+
+}
+#search{
+    width:300px;
+    height:25px;
+    position: relative;
+    top:30px;
+    padding-left: 17px;
+    border-radius: 10px;
+}
+#search::placeholder{
+position: relative;
+left:3px;
+}
+#home{
+    position: relative;
+    top:47px;
+    left:330px;
+}
+#ho:hover{
+    text-decoration: underline;
+}
+#cre:hover{
+    text-decoration: underline;
+}
+#sto:hover{
+    text-decoration: underline;
+}
+ul{
+    position: relative;
+    top:30px;
+    text-decoration: none;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 50px;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#store{
+            position: relative;
+            left:480px;
+            top:47px;
+        }
+#items{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 11px;
+    color:black;
+}
+#designers{
+    display: flex;
+    flex-direction: row;
+    margin:0px 32px;
+    
+}
+#richard{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#Yeezy{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#california{
+    width:200px;
+    height:300px;
+    background-color:rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#diorpurse{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#plainT{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#ringT{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#brands{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 29px;
+}
+#redbull{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#greend{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#brownk{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#yellowww{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#blueb{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#whitebu{
+    width:200px;
+    height:300px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    margin-left: 10px;
+}
+#baphape{
+    width:210PX;
+    height:230px;
+    position: absolute;
+    top:160px;
+    left: 46px;
+}
+#redcup{
+    width:210PX;
+    height:230px;
+    position: absolute;
+    top:160px;
+    left: 255px;
+}
+#watchmilli{
+    width:210PX;
+    height:200px;
+    position: absolute;
+    top:180px;
+    left: 463px;
+}
+#diort{
+    width:200PX;
+    height:200px;
+    position: absolute;
+    top:170px;
+    left: 680px;
+}
+#tims{
+    width:180PX;
+    height:210px;
+    position: absolute;
+    top:180px;
+    left: 890px;
+}
+#chromee{
+    width:180PX;
+    height:220px;
+    position: absolute;
+    top:170px;
+    left: 1100px;
+}
+#bagprice{
+    position: absolute;
+    top:390px;
+    left:60px;
+}
+#money{
+    background: antiquewhite;
+}
+#hatprice{
+    position: absolute;
+    top:390px;
+    left:270px;
+}
+#coin{
+    background: antiquewhite;
+}
+#richprice{
+    position: absolute;
+    top:390px;
+    left:480px;
+}
+#richmoney{
+background: antiquewhite;
+}
+#diorprice{
+    position: absolute;
+    top:390px;
+    left:690px;
+}
+#diormoney{
+    background: antiquewhite;
+}
+#timprice{
+    position: absolute;
+    top:390px;
+    left:900px;
+}
+#timmoney{
+    background: antiquewhite;
+}
+#chromeprice{
+    position: absolute;
+    top:390px;
+    left:1110px;
+}
+#chromeprice a{
+    text-decoration: none;
+    color:black;
+}
+#chromemoney{
+    background: antiquewhite;
+}
+#yeezyslip{
+    width:220PX;
+    height:230px;
+    position: absolute;
+    top:480px;
+    left: 34px;
+}
+#yeezyprice{
+    position: absolute;
+    top:700px;
+    left: 56px;
+}
+#yeezymoney{
+background: antiquewhite;
+}
+#icces{
+    width:170PX;
+    height:210px;
+    position: absolute;
+    top:490px;
+    left: 270px;
+}
+#iceprice{
+    position: absolute;
+    top:700px;
+    left: 270px;
+}
+#icemoney{
+    background: antiquewhite;
+}
+#jeanss{
+    width:220PX;
+    height:210px;
+    position: absolute;
+    top:490px;
+    left: 440px;
+}
+#whitejeeprice{
+    position: absolute;
+    top:700px;
+    left: 480px;
+}
+#whitejemoney{
+    background: antiquewhite;
+}
+#bagbuy{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nikeee{
+    width:160PX;
+    height:210px;
+    position: absolute;
+    top:490px;
+    left: 690px;
+}
+#nikeeeprice{
+    position: absolute;
+    top:700px;
+    left: 690px;
+}
+#nikeeemoney{
+    background: antiquewhite;
+}
+#ddd{
+          height:30px;
+          width:30px;
+          position: relative;
+          left:390px;
+          top:35px;
+        
+
+        }
+        #specs{
+            width:220PX;
+    height:210px;
+    position: absolute;
+    top:490px;
+    left: 870px;
+        }
+        #spectacles{
+            width:220PX;
+    height:210px;
+    position: absolute;
+    top:700px;
+    left: 897px;
+        }
+        #specsmoney{
+            background: antiquewhite;
+        }
+        #jackett{
+            width:180PX;
+    height:210px;
+    position: absolute;
+    top:490px;
+    left: 1108px;
+        }
+        #rab{
+            position: absolute;
+    top:701px;
+    left: 1108px;
+        }
+        #rabmoney{
+            background: antiquewhite;
+        }
+        
+#end{
+    height:40vh;
+    width:100%;
+    background-color:antiquewhite;
+    position: relative;
+    color:black;
+}
+#methods{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#cho{
+    margin-left: 60px;
+    font-weight: bold;
+}
+#cardcre{
+    position: absolute;
+    bottom:210px;
+    height:30px;
+    width:30px;
+    right:1290px;
+}
+#debit{
+    position: absolute;
+    bottom:219px;
+    right:1270px;
+    height:18px;
+    width:25px;
+}
+#paypa{
+    position: absolute;
+    bottom:219px;
+    right:1244px;
+    height:18px;
+    width:25px;
+}
+#small{
+    margin-top: 15px;
+}
+#customer{
+    padding: 20px 30px;
+    font-size: 15px;
+    position: absolute;
+    bottom:1px;
+    left:600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cus{
+position: relative;
+bottom: 5px;
+font-weight: bold;
+}
+</style>
+<body>
+    <div id="container">
+            <nav>
+             <h1>MY Closet</h1>
+             <input id="search" type="text" placeholder="Search">
+             <ion-icon id="home"name="home-outline"></ion-icon>
+             <img  id="ddd"src="./images/3dd-removebg-preview.png">
+             <ion-icon id="store" name="storefront-outline"></ion-icon>
+                <ul>
+                    <li id="ho"><a href="./index.html">Home</a></li>
+                    <li id="cre"><a href="forms.html">Create closet</a></li>
+                    <li id="sto"><a href="./closet.html">Store</a></li>
+                   </ul>
+            </nav>
+                <ul id="items">
+                    <li id="watch"><a href="services.html">Watches</li></a>
+                    <li id="shoes">Shoes</li>
+                    <li id="Bags">Bags</li>
+                    <li id="Shirts">Shirts</li>
+                    <li id="neck">necklaces</li>
+                    <li id="sli">Slippers</li>
+                    <li id="cup">Cups</li>
+                    <li id="short">Shorts</li>
+                    <li id="short">Jeans</li>
+                </ul><br><br>
+
+        <div id="designers">
+            <div id="richard"></div>
+            <div id="Yeezy"></div>
+            <div id="california"></div>
+            <div id="diorpurse"></div>
+            <div id="plainT"></div>
+            <div id="ringT"></div><br>
+        </div>
+        <div id="brands">
+            <div id="redbull"></div>
+            <div id="greend"></div>
+            <div id="brownk"></div>
+            <div id="yellowww"></div>
+            <div id="blueb"></div>
+            <div id="whitebu"></div>
+        </div>
+        <div id="product">
+            <img id="baphape" src="./images/millie-removebg-preview.png">
+            <img id="redcup" src="./images/skyd-removebg-preview.png">
+            <img id="watchmilli" src="./images/bwa-removebg-preview.png">
+            <img id="diort" src="./images/dream-removebg-preview.png">
+            <img id="tims" src="./images/ppt-removebg-preview.png">
+            <img id="chromee" src="./images/eas-removebg-preview.png">
+            <img id="yeezyslip" src="./images/716FMviRQ2L._AC_SS450_-removebg-preview.png">
+            <img id="icces" src="./images/pin-removebg-preview.png">
+            <img id="jeanss" src="./images/pilot-removebg-preview.png">
+            <img id="nikeee" src="./images/uboat-removebg-preview.png">
+            <img id="specs" src="./images/icew-removebg-preview.png">
+            <img id="jackett" src="./images/blue-removebg-preview.png">
+            
+        </div>
+        <div id="prices">
+            <div id="bagprice">
+                Richard Millie<br>
+                <span id="bagbuy">Buy</span>
+                <span id="money">Ghc400</span>
+            </div>
+            <div id="hatprice">
+                prisma p.11.46 <br>
+                <span id="hatbuy">Buy</span>
+                <span id="coin">Ghc250</span>  
+                
+            </div>
+            <div id="richprice">
+                gimm specs<br>
+                <span id="richbuy">Buy</span>
+                <span id="richmoney">Ghc1000</span>  
+                
+            </div>
+            <div id="diorprice">
+                gent watch <br>
+                <span id="diorbuy">Buy</span>
+                <span id="diormoney">Ghc200</span>  
+               
+            </div>
+            <div id="timprice">
+                ice on freeze <br>
+                <span id="timbuy">Buy</span> 
+                <span id="timmoney">Ghc800</span> 
+                
+            </div>
+            <div id="chromeprice">
+               patek watch <br>
+                <span id="chromebuy">Buy</span>
+                <span id="chromemoney">Ghc300</span>  
+             
+            </div>
+            <div id="yeezyprice">
+                shawn watch <br>
+                <span id="yeezybuy">Buy</span> 
+                <span id="yeezymoney">Ghc150</span> 
+               
+            </div>
+            <div id="iceprice">
+            water watch <br>
+            <span id="icebuy">Buy</span>
+                <span id="icemoney">Ghc1150</span>  
+               
+            </div>
+            <div id="whitejeeprice">
+                snoop on dog watch <br>
+                <span id="whitebuy">Buy</span>
+                    <span id="whitejemoney">Ghc250</span>  
+                   
+                </div>
+                <div id="nikeeeprice">
+                time travels <br>
+                    <span id="nikeeebuy">Buy</span>
+                        <span id="nikeeemoney">Ghc5000</span>  
+                       
+                    </div>
+                    <div id="spectacles">
+                    skydweller<br>
+                        <span id="specsbuy">Buy</span>
+                        <span id="specsmoney">Ghc5000</span>
+                    </div>
+                    <div id="rab">
+                        get on watch<br>
+                            <span id="rabbuy">Buy</span>
+                            <span id="rabmoney">Ghc3000</span>
+                        </div>
+        </div>
+    </div>
+    <div id="end">
+        <div id="methods">            
+            <span id="cho">Payment Methods:</span><br>
+            <div id="small"> My Closet,we offer a variety of secure payment options to<br>
+             make your shopping experience convenient and hassle-free.<br>
+             You can choose to pay for your purchases  using major credit card<br>
+            debit cards, PayPal, and other popular online payment methods.<br>
+            We prioritize the security of your transactions and ensure<br>
+             that your payment information is always protected.
+            </div>
+            <div id="customer">
+               <span id="cus"> Customer Service Approach:</span>
+                 <div id="teext">At My Closet, we believe in treating our<br>
+                service team  customers with the utmost respect  and care. Our dedicated customer <br>
+                 is here to assist you with any questions, concerns,  or issues you may have<br>
+                . We strive to provide prompt and helpful responses to ensure  your satisfaction<br>
+                Whether you need assistance with placing   with every aspect of your shopping experience.<br>
+                  an order, tracking a shipment,  or resolving an issue with a product, and professional support.
+                  you can count on us to provide you with friendly Your satisfaction is our top priority,<br>
+                 and we are committed to making your experience with My Closet a positive and enjoyable one.
+                 </div>
+                 <img id="cardcre"  src="./images/credit_card-removebg-preview.png">
+                 <img id="debit"  src="./images/debit-removebg-preview.png">
+                 <img id="paypa"  src="./images/paypa-removebg-preview.png">
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

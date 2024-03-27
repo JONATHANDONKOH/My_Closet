@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        *{
+            margin:0px;
+        }
+        body{
+       background-image: url(./images/99815.png);
+       background-position: center;
+       background-size: cover;
+        }
+        #container{
+            height:110vh;
+            width:100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+          
+        }
+        nav{
+            display: flex;
+            position: fixed;
+            justify-content: space-between;
+            padding-left:  70px;
+            z-index: 9999;
+        }
+        #house{
+            position:absolute;
+            left:400px;
+            bottom: 40px;
+        }
+        #house:hover{
+            text-decoration: underline;
+        }
+        #home{
+            position:absolute;
+            left:577px;
+}
+#store{
+    position:relative;
+            left:970px;
+        }
+        #boutique{
+            position:relative;
+            left:580px;
+            bottom: 30px;
+        
+        }
+        #boutique:hover{
+            text-decoration: underline;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ul{
+            position: relative;
+            top:30px;
+            text-decoration: none;
+        }
+        ul li {
+            display: inline;
+        padding: 0 80px;
+        
+        }
+        ul li a{
+            color: black;
+            text-decoration: none;
+        }
+        #create{
+            cursor: default;
+            position:relative;
+            left:577px;
+            bottom: 30px;
+            transition: text-decoration 0.3s ease
+        }
+        #create:hover{
+            text-decoration: underline;
+        }
+        #wardrobe{
+            height:30px;
+            width:50px;
+            position: relative;
+            left:99px;
+            top:10px;
+        }
+        #smallboy{
+       position: relative;
+       top:30px;
+        }
+        #images{
+            transition: transform 0.5s ease-in-out;
+        }
+        #head{
+            height:250px;
+            width:300px;
+            position: relative;
+            left:750px;
+            bottom: 70px;
+            z-index: 2;
+
+        }
+        #metalica{
+            height:300px;
+            width:330px;
+            position: relative;
+            bottom: 70px;
+            left:570px;
+            z-index: 1;
+        }
+        #vlone{
+            position: relative;
+            bottom: 70px;
+            left:400px;
+            height:330px;
+            width:300px;
+            z-index: -1;
+        }
+        #alertbar{
+            width:280px;
+            height:100px;
+            background-color: white;
+            position: absolute;
+            top:19px;
+            left:900px;
+            display: none;
+           
+        }
+        #user{
+            position: relative;
+            top:50px;
+            right:100px;
+            cursor: default;
+        }
+        #vendor{
+            position: relative;
+            top:30px;
+            left:90px;
+        }
+        #sign{
+            font-size: 20px;
+            text-align: center;
+        }
+        #ddd{
+          height:30px;
+          width:30px;
+          position: relative;
+          left:700px;
+          bottom:10px;
+
+        }
+       /* #service {
+    position: relative;
+    top:50px;
+    left:10px;
+    width: 500px;
+    height: 270px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:white; /* Make the background color transparent */
+    /* Additional styles can be added here */
+   /* background-position: center;
+    background-size: contain;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    z-index: -2;
+}
+
+#service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    display: block;
+    z-index: -3;
+    margin: 0px 10px;
+}*/
+#discover{
+    margin-left: 80px;
+}
+h2{
+    color:white;
+    position: absolute;
+    top:50px;
+    left:200px;
+}
+#carousel{
+    display: flex;
+    flex-direction: row;
+    margin:0px 30px;
+}
+#sneaker{
+  height:230px;
+  width:220px;
+  position: relative;
+  bottom: 85px;
+  background-color: black;
+    backdrop-filter: blur(10px);
+    opacity: 0.1;
+}
+#mschf{
+    width:220px;
+    height:220px;
+    position:relative;
+    right:230px;
+    bottom: 90px;
+}
+#mschfbuy{
+    position:relative;
+    right:400px;
+     top:105px;
+    color: white;
+    font-size: 22px;
+}
+
+#kick{
+    position: relative;
+    height:230px;
+    bottom: 85px;
+    right:310px;
+    width:220px;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    opacity: 0.1;
+    
+}
+#bandana{
+    width:220px;
+    height:220px;
+    position:relative;
+    right:530px;
+    bottom: 90px;
+}
+#bandanabuy{
+    position:relative;
+    right:720px;
+     top:105px;
+    color: white;
+    font-size: 22px;
+}
+#bolar{
+
+    position: absolute;
+    top:400px;
+    height:230px;
+    right:560px;
+    width:220px;
+    background-color: black;
+    backdrop-filter: blur(10px);
+    opacity: 0.1;
+
+}
+#baggy{
+    position: absolute;
+    top:400px;
+    width:230px;
+    height:205px;
+    left:560px;
+}
+#bagybuy{
+    position: absolute;
+    top:593px;
+    left:600px;
+    font-size: 22px;
+    color: white;
+}
+
+
+#guccislip{
+position: absolute;
+top:400px;
+height:230px;
+right:295px;
+width:220px;
+background-color: black;
+backdrop-filter: blur(10px);
+opacity: 0.1;
+
+}
+#slip{
+    position: absolute;
+    top:399px;
+    width:180px;
+    height:205px;
+    left:850px;
+}
+
+#slipbuy{
+    position: absolute;
+    top:590px;
+    font-size: 22px;
+    left:870px;
+    color: white;
+}
+#mywa{
+position: absolute;
+top:400px;
+height:230px;
+right:30px;
+width:220px;
+background-color: black;
+backdrop-filter: blur(10px);
+opacity: 0.1;
+
+}
+#wa{
+    position: absolute;
+top:420px;
+left:1090px;
+width:220px;
+height:160px;
+}
+#wabuy{
+    position: absolute;
+top:590px;
+left:1140px;
+font-size: 22px;
+color: white;
+}
+#fashion{
+    margin: 18px;
+    color: white;
+    position: relative;
+    top:70px;
+    font-size: 30px;
+}
+#end{
+    height: 40vh;
+    width:100%;
+    background-color: antiquewhite;
+    position: relative;
+    color:black;
+}
+#methods{
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#cho{
+    margin-left: 60px;
+    font-weight: bold;
+}
+#cardcre{
+    position: absolute;
+    top:20px;
+    left:10px;
+    height:30px;
+    width:30px;
+}
+#debit{
+    position: absolute;
+    top:23px;
+    left:36px;
+    height:18px;
+    width:25px;
+}
+#paypa{
+    position: absolute;
+    top:23px;
+    left:63px;
+    height:18px;
+    width:25px;
+}
+#small{
+    margin-top: 15px;
+}
+#customer{
+    padding: 20px 30px;
+    font-size: 15px;
+    position: absolute;
+    bottom:1px;
+    left:600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cus{
+position: relative;
+bottom: 5px;
+font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>My Closet</h1>
+        <nav>
+       <ion-icon id="home"name="home-outline"></ion-icon>
+       <ion-icon id="store" name="storefront-outline"></ion-icon>
+       <img  id="ddd"src="./images/3dd-removebg-preview.png">
+       <ul>
+        <li id="house"><a href="./index.html">Home</a></li>
+        <li id="create"><a href="forms.html">Create closet</a></li>
+        <li id="boutique"><a href="./closet.html">Store</a></li>
+       </ul>
+        </nav>
+        <div id="fashion">
+            style simplified<br>
+          contact:0242576910
+        </div>
+        <div id="images">
+            <img id="head" src="./images/head-removebg-preview.png">
+            <img id="metalica" src="./images/mettalica-removebg-preview.png">
+            <img id="vlone" src="./images/vlone-removebg-preview.png">
+        </div>
+  <div id="carousel">
+         <div id="sneaker">
+         </div>
+       <img id="mschf"src="./images/mschhf-removebg-preview.png">
+       <div id="mschfbuy">Buy From Store</div>
+        <div id="kick"></div>
+        <img  id="bandana" src="./images/bandana-removebg-preview.png">
+        <div id="bandanabuy">Buy From Store</div>
+       <div id="bolar"></div>
+        <img id="baggy" src="./images/baggy-removebg-preview.png">
+        <div id="bagybuy">
+            Buy From Store
+        </div>
+        <div id="guccislip"></div>
+        <img id="slip" src="./images/guc-removebg-preview.png">
+        <div id="slipbuy">
+            Buy From Store
+        </div>
+        <div id="mywa"></div>
+        <img id="wa"src="./images/waatch-removebg-preview.png">
+        <div id="wabuy">
+            Buy From Store
+        </div>
+       </div>
+    </div>
+    <div id="end">
+        <div id="methods">            
+<span id="cho">Payment Methods:</span><br>
+<div id="small"> My Closet,we offer a variety of secure payment options to<br>
+ make your shopping experience convenient and hassle-free.<br>
+ You can choose to pay for your purchases  using major credit card<br>
+debit cards, PayPal, and other popular online payment methods.<br>
+We prioritize the security of your transactions and ensure<br>
+ that your payment information is always protected.
+</div>
+<div id="customer">
+   <span id="cus"> Customer Service Approach:</span>
+     <div id="teext">At My Closet, we believe in treating our<br>
+    service team  customers with the utmost respect  and care. Our dedicated customer <br>
+     is here to assist you with any questions, concerns,  or issues you may have<br>
+    . We strive to provide prompt and helpful responses to ensure  your satisfaction<br>
+    Whether you need assistance with placing   with every aspect of your shopping experience.<br>
+      an order, tracking a shipment,  or resolving an issue with a product, and professional support.
+      you can count on us to provide you with friendly Your satisfaction is our top priority,<br>
+     and we are committed to making your experience with My Closet a positive and enjoyable one.
+     </div>
+</div>
+        </div>
+        <img id="cardcre"  src="./images/credit_card-removebg-preview.png">
+        <img id="debit"  src="./images/debit-removebg-preview.png">
+        <img id="paypa"  src="./images/paypa-removebg-preview.png">
+    </div>
+    <script>
+        setInterval(function() {
+    let head = document.getElementById('head');
+    let headStyle = window.getComputedStyle(head);
+    let headZIndex = parseInt(headStyle.getPropertyValue('z-index'));
+
+    if (headZIndex === 2) {
+        head.style.zIndex = "-1";
+    } else if (headZIndex === -1) {
+        head.style.zIndex = "1";
+    } else {
+        head.style.zIndex = "2";
+    }
+    if (head.style.zIndex === "-1") {
+    head.style.position = "relative";
+    head.style.bottom = "90px";
+    head.style.left = "990px";
+} else if (head.style.zIndex === "1") {
+    head.style.position = "relative";
+    head.style.bottom = "100px";
+    head.style.left = "850px";
+} else if (head.style.zIndex === "2") {
+    head.style.position = "relative";
+    head.style.bottom = "110px";
+    head.style.left = "800px";
+}
+}, 2000);
+setInterval(function() {
+    let metalica = document.getElementById('metalica');
+    let metalicaStyle = window.getComputedStyle(metalica);
+    let metalicaZIndex = parseInt(metalicaStyle.getPropertyValue('z-index'));
+
+    if (metalicaZIndex === 1) {
+        metalica.style.zIndex = "2";
+    } else if (metalicaZIndex === 2) {
+        metalica.style.zIndex = "-1";
+    } else {
+        metalica.style.zIndex = "1";
+    }
+    if (metalica.style.zIndex === "-1") {
+    metalica.style.position = "relative";
+    metalica.style.bottom = "60px";
+    metalica.style.left = "680px";
+} else if (metalica.style.zIndex === "1") {
+    metalica.style.position = "relative";
+    metalica.style.bottom = "60px";
+    metalica.style.left = "600px";
+} else if (metalica.style.zIndex === "2") {
+    metalica.style.position = "relative";
+    metalica.style.bottom = "90px";
+    metalica.style.left = "400px";
+}
+}, 2000);
+
+setInterval(function() {
+    let vlone = document.getElementById('vlone');
+    let vloneStyle = window.getComputedStyle(vlone);
+    let vloneZIndex = parseInt(vloneStyle.getPropertyValue('z-index'));
+
+    if (vloneZIndex === -1) {
+        vlone.style.zIndex = "1";
+    } else if (vloneZIndex === 1) {
+        vlone.style.zIndex = "2";
+    } else {
+        vlone.style.zIndex = "-1";
+    }
+  if (vlone.style.zIndex === "-1") {
+    vlone.style.position = "relative";
+    vlone.style.bottom = "50px";
+    vlone.style.left = "405px";
+} else if (vlone.style.zIndex === "1") {
+    vlone.style.position = "relative";
+    vlone.style.bottom = "80px";
+    vlone.style.left = "200px";
+} else if (vlone.style.zIndex === "2") {
+    vlone.style.position = "relative";
+    vlone.style.bottom = "90px";
+    vlone.style.left = "100px";
+    
+}
+}, 2000);
+       </script>
+</script>
+</body>
+</html>
+
+</div>
+</div>
